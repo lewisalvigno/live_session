@@ -1,0 +1,20 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "Projet hackaton (plus de détails soon....)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lewisalvigno/live_evaluation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lewisalvigno/live_evaluation/issues"
+  },
+  "homepage": "https://github.com/lewisalvigno/live_evaluation#readme"
+}
