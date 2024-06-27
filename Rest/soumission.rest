@@ -1,0 +1,40 @@
+### Créer une soumission
+POST http://localhost:5000/api/soumissions HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "utilisateurId": "667d515e7722ba3624ffcf9f",
+  "evaluationId": "667d5cf389f39face9d89583",
+  "reponses": [],
+  "etatPlagiat": "",
+  "fichiers": [],
+  "noteFinale": 0
+}
+
+### Récupérer toutes les soumissions
+GET http://localhost:5000/api/soumissions HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+### Récupérer une soumission par ID
+GET http://localhost:5000/api/soumissions/{{soumissionId}} HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+### Mettre à jour une soumission
+PUT http://localhost:5000/api/soumissions/{{soumissionId}} HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "reponses": [],
+  "etatPlagiat": "Plagiat détecté",
+  "fichiers": [],
+  "noteFinale": 80
+}
+
+### Supprimer une soumission
+DELETE http://localhost:5000/api/soumissions/{{soumissionId}} HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}

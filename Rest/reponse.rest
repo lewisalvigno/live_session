@@ -1,0 +1,33 @@
+### Créer une réponse
+POST http://localhost:5000/api/reponses HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "questionId": "60a65778348b1936c4257ba5",
+  "texteReponse": "Réponse à la question"
+}
+
+### Récupérer toutes les réponses pour une question donnée
+GET http://localhost:5000/api/reponses/question/60a65778348b1936c4257ba5 HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+### Récupérer une réponse par ID
+GET http://localhost:5000/api/reponses/{{reponseId}} HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+### Mettre à jour une réponse
+PUT http://localhost:5000/api/reponses/{{reponseId}} HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "texteReponse": "Nouvelle réponse à la question"
+}
+
+### Supprimer une réponse
+DELETE http://localhost:5000/api/reponses/{{reponseId}} HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
